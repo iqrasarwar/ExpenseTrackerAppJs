@@ -1,0 +1,66 @@
+body
+{
+   display: flex;
+   flex-direction: column;
+   margin: 10px 100px;
+   text-align: center;
+}
+td{
+   padding: 5px;
+}
+th{
+   padding: 10px;
+}
+th{
+   background-color: black;
+   color: white;
+   overflow: auto;
+}
+h1{
+   text-align: center;
+   color: rgb(6, 174, 6);
+   text-decoration: underline;
+}
+tr:nth-child(2n+1) td
+{
+   background-color: rgb(202, 202, 202);
+}
+tr:nth-child(2n) td
+{
+   background-color: rgb(242, 238, 238);
+}
+button
+{
+   color: rgb(255, 255, 255);
+   padding: 10px;
+   border: none;
+   border-radius: 8px;
+   width: 47%;
+   margin: 2px;
+}
+#delete
+{
+   background-color: red;
+}
+#update
+{
+   background-color: green;
+}
+.btn
+{
+   width: 25%;
+   display: inline;
+   margin: auto;
+}
+#addNew
+{
+   color: white;
+   background-color: black;
+}
+#filter
+{
+   color: black;
+   border: black 1px solid;
+   background-color: white;
+   margin: 20px 1px;
+}

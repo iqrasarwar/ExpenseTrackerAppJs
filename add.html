@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Expense Traker</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <h1>Add New Expense</h1>
+   <form action="">
+      <div class="inputFields">
+         <div class="input">
+            <label for="Summary">Expense Summary</label>
+            <input type="text" name="Summary" id="summary" placeholder="Expense Summary Here" value="" required>
+         </div>
+         <div class="input">
+            <label for="desc">Expense Description</label>
+            <input type="text" name="desc" id="describtion" placeholder="Expense Description Here" required>
+         </div>
+         <div class="input">
+            <label for="amount">Amount</label>
+            <input type="number" name="amount" id="amount" placeholder="Expense Amount Here" required>
+         </div>
+         <div class="input">
+            <label for="type">Type</label>
+            <input type="text" name="type" id="type" placeholder="Expense Type Here" required>
+         </div>
+         <div class="input">
+            <label for="time">Time</label>
+            <input type="text" name="time" id="time" placeholder="" disabled value="">
+         </div>
+      </div>
+      <button id="add">
+         ADD
+      </button>
+      <button id="home">Go Back To Home</button>
+   </form>
+   <script src="script.js"></script>
+</body>
+</html>
+
+
+
+

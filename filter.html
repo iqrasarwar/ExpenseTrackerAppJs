@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Expense Traker</title>
+   <link rel="stylesheet" href="styleIndex.css">
+</head>
+<body>
+   <h1>Filter Expenses</h1>
+            <label for="type">Type</label>
+            <input type="text" name="type" id="type" placeholder="Expense Type Here" required>
+   <div>
+      <button id="addNew" class="btn">
+         Add New Expense
+      </button>
+      <button id="filter" class="btn">
+         Go Back To Home
+      </button>
+   </div>
+   <table class="table">
+      <thead>
+         <th>Sr.</th>
+         <th>Expense Summary.</th>
+         <th>Description</th>
+         <th>Price</th>
+         <th>Type</th>
+         <th>Date</th>
+         <th>Options</th>
+      </thead>
+      <tbody id="tbody"></tbody>
+   </table>
+   <div>
+      <button id="filter" class="btn">
+         Go Back To Home
+      </button>
+   </div>
+   <script src="scriptIndex.js"></script>
+</body>
+</html>
+
+
+
+

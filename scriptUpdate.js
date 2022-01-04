@@ -87,3 +87,7 @@ function updateExpense()
       console.log(expensesArray[i]);
    }
 }
+function GoToMenu()
+{
+   location.href="index0.html";
+}

@@ -50,3 +50,35 @@ button
    padding: 2% 4%;
    margin: auto;
 }
+#chartContainer
+{
+   margin: auto;
+}
+h3,p{
+   text-align: center;
+}
+select
+{
+   width: 30%;
+   padding: 5px;
+   margin: 0% 3%;
+   border-radius: 3px;
+}
+.select
+{
+   margin-left: 25%;
+}
+#menu
+{
+   background-color: white;
+   border: 1px green solid;
+   color: green;
+   margin: auto;
+   padding: 17px 28px;
+   border-radius: 5px;
+}
+form, .back
+{
+   margin: 5px;
+}
+

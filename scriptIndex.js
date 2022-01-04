@@ -66,6 +66,13 @@ function updateRow(indexToUpdate)
 {
    location.href = "update.html?" + indexToUpdate;
 }
-
+document.getElementById("filter").onclick = function()
+{
+   location.href = "filter.html";
+}
+function GoToMenu()
+{
+   location.href="index0.html";
+}
 
 

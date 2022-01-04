@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Expense Tracker</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <h1>Graph Based Summary</h1>
+   <h3>Select Time Period</h3>
+   <div class="select">
+      <select name="Month" id="month">
+         <option value="Select Month" selected disabled hidden>Select Month</option>
+         <option value="January">January</option>
+         <option value="Feburary">Feburary</option>
+         <option value="March">March</option>
+         <option value="April">April</option>
+         <option value="May">May</option>
+         <option value="June">June</option>
+         <option value="July">July</option>
+         <option value="Augest">Augest</option>
+         <option value="September">September</option>
+         <option value="October">October</option>
+         <option value="November">November</option>
+         <option value="December">December</option>
+      </select>
+      <select name="Year" id="year">
+         <option value="Select Year" selected disabled hidden>Select Year</option>
+         <option value="2015">2015</option>
+         <option value="2016">2016</option>
+         <option value="2017">2017</option>
+         <option value="2018">2018</option>
+         <option value="2019">2019</option>
+         <option value="2021">2021</option>
+         <option value="2022">2022</option>
+         <option value="2023">2023</option>
+         <option value="2024">2024</option>
+         <option value="2025">2025</option>
+      </select>
+   </div>
+   <p>Expense Summaries</p>
+   <div id="chartContainer" style="height: 300px; width: 80%;"></div>
+   <button id="home">Go Back To Home</button>
+  <div class="back">
+   <button id="menu" onclick="GoToMenu()">
+      Back To Main Menu
+   </button>
+  </div>
+   <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+   <script src="scriptChart.js"></script>
+</body>
+</html>

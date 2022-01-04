@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Expense Tracker</title>
+   <link rel="stylesheet" href="style0.css">
+</head>
+<body>
+   <div class="container">
+      <h1>
+         My Expense Tracker App
+      </h1>
+      <button class="btn" onclick="GoToIndex()">
+         View All Expenses
+      </button>
+      <button class="btn" onclick="GoToIndex()">
+         Update Expenses
+      </button>
+      <button class="btn" onclick="GoToIndex()">
+         Delete Expenses
+      </button>
+      <button class="btn" onclick="GoToAdd()">
+         Add New Expense
+      </button>
+      <button class="btn" onclick="GoToFilter()">
+         Filter Expenses
+      </button>
+      <button class="btn" onclick="GoToChart()">
+         View Graph Summary
+      </button>
+   </div>
+
+   <script>
+      function GoToIndex()
+      {
+         location.href="index.html";
+      }
+      function GoToAdd()
+      {
+         location.href="add.html";
+      }
+      function GoToFilter()
+      {
+         location.href="filter.html";
+      }
+      function GoToChart()
+      {
+         location.href="chart.html";
+      }
+   </script>
+</body>
+</html>

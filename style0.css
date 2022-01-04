@@ -1,0 +1,32 @@
+body{
+   background-image: linear-gradient(to top,#12c2e9 ,#f64f59 ,#75ed71 );
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+.container{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   height: 100vh;
+}
+.btn
+{
+   width:30%;
+   padding: 25px;
+   margin: 5px;
+   border: rgb(99, 204, 58) 1px solid;
+   background-color: rgba(50, 40, 71, 0.2);
+   font-size: large;
+   color: rgb(22, 60, 7);
+   border-radius: 30px;
+}
+h1{
+   color: rgb(45, 160, 6);
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.btn:hover
+{
+   background-color: white;
+   border: 2px solid rgb(99, 204, 58) ;
+   font-weight: bold;
+}

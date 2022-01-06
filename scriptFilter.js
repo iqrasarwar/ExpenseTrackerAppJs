@@ -1,3 +1,36 @@
+let summaryArray = [];
+let descArray = [];
+let amountArray = [];
+let typeArray = [];
+let timeArr = [];
+
+let summaryStore = localStorage.getItem("summary");
+let descStore = localStorage.getItem("desc");
+let amountStore = localStorage.getItem("amount");
+let typeStore = localStorage.getItem("type");
+let timeStore = localStorage.getItem("time");
+
+let expenseStore = [summaryStore, descStore, amountStore, typeStore, timeStore];
+let expensesArray = [summaryArray,descArray,amountArray,typeArray,timeArr];
+
+for(let i =0; i< expenseStore.length; i++)
+{
+   if(expenseStore[i] == null)
+   {
+      expensesArray[i] = [];
+   }
+   else
+   {
+      expensesArray[i] = JSON.parse(expenseStore[i]);
+   }
+}
+let newRow = "";
+summaryArray = expensesArray[0];
+descArray = expensesArray[1];
+amountArray = expensesArray[2];
+typeArray = expensesArray[3];
+timeArr = expensesArray[4];
+
 document.getElementById("filterR").onclick = exit;
 function exit()
 {
@@ -7,42 +40,11 @@ function exit()
 
 function search()
 {
+   newRow = "";
    let type =  document.getElementsByName("type")[0].value;
    let srange = document.getElementsByName("range1")[0].value;
    let erange = document.getElementsByName("range2")[0].value;
-   let summaryArray = [];
-   let descArray = [];
-   let amountArray = [];
-   let typeArray = [];
-   let timeArr = [];
 
-   let summaryStore = localStorage.getItem("summary");
-   let descStore = localStorage.getItem("desc");
-   let amountStore = localStorage.getItem("amount");
-   let typeStore = localStorage.getItem("type");
-   let timeStore = localStorage.getItem("time");
-
-   let expenseStore = [summaryStore, descStore, amountStore, typeStore, timeStore];
-   let expensesArray = [summaryArray,descArray,amountArray,typeArray,timeArr];
-   let expenseItems = ["summary","desc","amount","type","time"];
-
-   for(let i =0; i< expenseStore.length; i++)
-   {
-      if(expenseStore[i] == null)
-      {
-         expensesArray[i] = [];
-      }
-      else
-      {
-         expensesArray[i] = JSON.parse(expenseStore[i]);
-      }
-   }
-   let newRow = "";
-   summaryArray = expensesArray[0];
-   descArray = expensesArray[1];
-   amountArray = expensesArray[2];
-   typeArray = expensesArray[3];
-   timeArr = expensesArray[4];
    for(let j =0; j< summaryArray.length; j++)
    {
       let num = j+1;
@@ -74,10 +76,22 @@ function search()
    {
       document.getElementById("tbody").innerHTML = "No Row Found";
    }
-
 }
 document.getElementById("addNew").onclick = search;
 function GoToMenu()
 {
    location.href="index0.html";
+}
+//get types from table remove duplicates and set in options of select
+let copyType = [];
+for (let index = 0; index < typeArray.length; index++) {
+  copyType[index] = typeArray[index];
+}
+var uniq = [ ...new Set(copyType) ];
+let select = document.getElementById("type");
+for (let index = 0; index < uniq.length; index++)
+{
+   var option = document.createElement("option");
+   option.text = uniq[index];
+   select.add(option);
 }

@@ -74,5 +74,3 @@ function GoToMenu()
 {
    location.href="index0.html";
 }
-
-

@@ -11,8 +11,9 @@
    <h1>Filter Expenses</h1>
    <div class="filter">
       <label for="type">Type</label>
-      <input type="text" name="type" id="type" placeholder="Expense Type Here" required value="">
-
+      <select name="type" id="type" required value="">
+         <option value="" disabled hidden selected>Slecet Expense Type Here</option>
+      </select>
       <label for="type">Range</label>
       <div id="range">
          <input type="number" name="range1" id="range1" placeholder="Start Range Here" value = "" required>

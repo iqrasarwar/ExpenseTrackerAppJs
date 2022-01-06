@@ -57,6 +57,7 @@ function addExpense()
       localStorage.setItem(expenseItems[i],JSON.stringify(expensesArray[i]));
       console.log(expensesArray[i]);
    }
+   alert("Record Added!");
 }
 
 document.getElementById("home").onclick = exit;

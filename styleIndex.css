@@ -72,7 +72,7 @@ button
    font-weight: bold;
    font-size: large;
 }
-.filter input{
+.filter select,.filter input{
    padding: 10px;
    border-radius: 5px;
 }
